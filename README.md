@@ -22,7 +22,7 @@
 | 이름 | GitHub 계정 | 담당 | 커밋(main) |
 | --- | --- | --- | --- |
 | 이재희(팀장) | [@jaehuiLee](https://github.com/jaehuiLee) | 💻 전체 프로젝트 관리 및 코드 리뷰 | 진행중 |
-| 최은진 | [@PanicAthe](https://github.com/PanicAthe) | 📝 글 작성 기능, 컨벤션, SQL 작성 | 5 |
+| 최은진 | [@PanicAthe](https://github.com/PanicAthe) | 📝 글 작성 기능, 컨벤션, SQL 작성 | 6 |
 | 김세연 | [@Yee0nnN](https://github.com/Yee0nnN) | 📖 목록 조회 기능 (선택, 전체) | 7 |
 | 강경민 | [@Gaegulin](https://github.com/Gaegulin) | 📌 상세 조회, 수정, 삭제 기능 | 진행중 |
 
@@ -30,7 +30,7 @@
 
 ### 💼 프로젝트 역할 및 담당 업무
 
-### 🌟 이재희 (팀장) - [@jaehuiLee](https://github.com/jaehuiLee)
+###  이재희 (팀장) - [@jaehuiLee](https://github.com/jaehuiLee)
 
 - **프로젝트 관리 및 코드 품질 향상**
     - 프로젝트 전반적인 코드 리뷰 및 통합 관리
@@ -42,9 +42,7 @@
     - `Controller`: 공통 실행 메서드를 정의하는 인터페이스 개발
     - `DBUtil`: 데이터베이스 연결 및 해제를 효율적으로 관리
 
----
-
-### 📝 최은진 - [@PanicAthe](https://github.com/PanicAthe)
+###  최은진 - [@PanicAthe](https://github.com/PanicAthe)
 
 - **게시글 작성 기능 구현**
     - `WriteController`: 사용자 입력을 바탕으로 새로운 게시글을 작성하고 DB에 저장하는 기능 구현
@@ -57,9 +55,7 @@
     - DB 스키마 설계 및 SQL 스크립트 작성
     - `board` 테이블과 시퀀스 생성, 더미 데이터 삽입
 
----
-
-### 📋 김세연 - [@Yee0nnN](https://github.com/Yee0nnN)
+### 김세연 - [@Yee0nnN](https://github.com/Yee0nnN)
 
 - **게시글 목록 조회 기능 구현**
     - `ListController`: 게시글 목록을 ID 오름차순으로 정렬하여 조회
@@ -70,9 +66,7 @@
 - **비즈니스 로직 구현**
     - `BoardService`: 게시글 전체 조회 기능 (`selectAll()`)
 
----
-
-### 🛠️ 강경민 - [@Gaegulin](https://github.com/Gaegulin)
+###  강경민 - [@Gaegulin](https://github.com/Gaegulin)
 
 - **게시글 상세 조회 및 관리**
     - `DetailController`: 특정 게시글 ID를 입력받아 상세 조회, 수정, 삭제 기능 구현

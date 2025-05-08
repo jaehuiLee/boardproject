@@ -63,9 +63,11 @@ public class DetailController implements Controller {
 	    }
 
 	    // 사용자로부터 새 제목/내용 입력받기
+	    System.out.println("기존 제목 : " + board.getTitle());
 	    System.out.print("새 제목 입력 > ");
 	    String newTitle = sc.nextLine();
-
+	    
+	    System.out.println("기존 내용 : " + board.getContent());
 	    System.out.print("새 내용 입력 > ");
 	    String newContent = sc.nextLine();
 
@@ -90,11 +92,11 @@ public class DetailController implements Controller {
 		Board board = boardService.selectOne(id);
 		if (board != null) {
 			System.out.println("\n==== 게시글 상세 정보 ====");
-			System.out.println("ID         : " + board.getId());
-			System.out.println("제목       : " + board.getTitle());
-			System.out.println("내용       : " + board.getContent());
-			System.out.println("작성자     : " + board.getWriter());
-			System.out.println("작성일자   : " + board.getCreatedDate());
+			System.out.println("ID	: " + board.getId());
+			System.out.println("제목	: " + board.getTitle());
+			System.out.println("내용	: " + board.getContent());
+			System.out.println("작성자	: " + board.getWriter());
+			System.out.println("작성일자	: " + board.getCreatedDate());
 			System.out.println("==========================\n");
 		} else {
 			System.out.println("해당 ID의 게시글이 존재하지 않습니다.");

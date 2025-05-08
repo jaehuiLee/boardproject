@@ -1,26 +1,25 @@
 package controller;
 
 import java.util.Scanner;
+import common.Controller;
 
-public class DetailController {
+public class DetailController implements Controller {
 
-	static Scanner sc = new Scanner(System.in);
-	
-	
-	public void excute() {
+	@Override
+	public void execute(Scanner sc) {
 		boolean isStop = false;
 		while (!isStop) {
 			menuDisplay();
 			int job = sc.nextInt();
 			switch (job) {
 			case 1 -> {
-				f_selectOne();
+				f_selectOne(sc);
 			}
 			case 2 -> {
-				f_update();
+				f_update(sc);
 			}
 			case 3 -> {
-				f_delete();
+				f_delete(sc);
 			}
 			case 99 -> {
 				isStop = true;
@@ -31,20 +30,20 @@ public class DetailController {
 		System.out.println("=========Detail Controller End=========");
 	}
 
-	private void f_delete() {
+	private void f_delete(Scanner sc) {
 		System.out.print("삭제할 글 id >");
 		int id = sc.nextInt();
 		
 		
 	}
 
-	private void f_update() {
+	private void f_update(Scanner sc) {
 		System.out.println("업데이트할 글 id >");
 		int id = sc.nextInt();
 		
 	}
 
-	private void f_selectOne() {
+	private void f_selectOne(Scanner sc) {
 		System.out.print("상세조회할 글 id >");
 		int id = sc.nextInt();
 		

@@ -7,6 +7,7 @@ public class DetailController implements Controller {
 
 	@Override
 	public void execute(Scanner sc) {
+
 		boolean isStop = false;
 		while (!isStop) {
 			menuDisplay();
@@ -47,10 +48,8 @@ public class DetailController implements Controller {
 		System.out.print("상세조회할 글 id >");
 		int id = sc.nextInt();
 		
+
 	}
-	
-	
-	
 	private void menuDisplay() {
 		System.out.println("-------------------------");
 		System.out.println("1.글 상세조회 2.글 수정 3. 글 삭제");
@@ -59,4 +58,5 @@ public class DetailController implements Controller {
 		System.out.print("작업선택>");
 		
 	}
+	
 }

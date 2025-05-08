@@ -1,5 +1,22 @@
 package service;
 
-public class BoardService {
+import model.Board;
+import model.BoardDAO;
 
+public class BoardService {
+	BoardDAO boardDAO = new BoardDAO();
+	
+	 public Board selectOne(int id) {
+		 return boardDAO.selectOne(id);
+	 }
+	 
+	 public boolean update(Board board) {
+		 return boardDAO.update(board);
+	 }
+	 
+	 public boolean delete(int id) {
+		 return boardDAO.delete(id);
+	 }
+	 
+	 
 }

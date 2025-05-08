@@ -10,7 +10,7 @@
 
 - Java (JDK 8 이상)
 - Oracle DB
-- JDB
+- JDBC
 - Git
 - Lombok
 

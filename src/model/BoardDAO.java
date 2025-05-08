@@ -8,7 +8,7 @@ import util.DBUtil;
 public class BoardDAO {
 
     private static final String INSERT_SQL = "INSERT INTO board (id, title, content, writer, created_date) VALUES (board_seq.NEXTVAL, ?, ?, ?, SYSTIMESTAMP)";
-    private static final String SELECT_ALL_SQL = "SELECT id, title, writer, created_date FROM board ORDER BY created_date DESC";
+    private static final String SELECT_ALL_SQL = "SELECT id, title, writer, content, created_date FROM board ORDER BY id ASC";
     private static final String SELECT_ONE_SQL = "SELECT id, title, content, writer, created_date FROM board WHERE id = ?";
     private static final String UPDATE_SQL = "UPDATE board SET title = ?, content = ? WHERE id = ?";
     private static final String DELETE_SQL = "DELETE FROM board WHERE id = ?";
@@ -56,6 +56,7 @@ public class BoardDAO {
                         .id(rs.getInt("id"))
                         .title(rs.getString("title"))
                         .writer(rs.getString("writer"))
+                        .content(rs.getString("content")) 
                         .createdDate(rs.getTimestamp("created_date"))
                         .build();
 

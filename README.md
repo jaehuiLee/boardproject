@@ -15,6 +15,74 @@
 - Lombok
 
 ---
+## 👥 팀원 구성 및 역할 분담
+
+본 프로젝트는 **게시판 관리 시스템**을 개발하기 위해 아래와 같은 팀원으로 구성되었습니다.
+
+| 이름 | GitHub 계정 | 담당 | 커밋(main) |
+| --- | --- | --- | --- |
+| 이재희(팀장) | [@jaehuiLee](https://github.com/jaehuiLee) | 💻 전체 프로젝트 관리 및 코드 리뷰 | 진행중 |
+| 최은진 | [@PanicAthe](https://github.com/PanicAthe) | 📝 글 작성 기능, 컨벤션, SQL 작성 | 5 |
+| 김세연 | [@Yee0nnN](https://github.com/Yee0nnN) | 📖 목록 조회 기능 (선택, 전체) | 7 |
+| 강경민 | [@Gaegulin](https://github.com/Gaegulin) | 📌 상세 조회, 수정, 삭제 기능 | 진행중 |
+
+---
+
+### 💼 프로젝트 역할 및 담당 업무
+
+### 🌟 이재희 (팀장) - [@jaehuiLee](https://github.com/jaehuiLee)
+
+- **프로젝트 관리 및 코드 품질 향상**
+    - 프로젝트 전반적인 코드 리뷰 및 통합 관리
+    - 기능 개발 중 발생하는 충돌 해결 및 브랜치 관리
+- **데이터베이스 관리**
+    - **Oracle SQL Developer**를 사용하여 데이터베이스 생성 및 관리
+- **주요 기능 구현**
+    - `FrontController`: 각 기능의 컨트롤러를 선택 및 실행하는 중앙 제어 컨트롤러 개발
+    - `Controller`: 공통 실행 메서드를 정의하는 인터페이스 개발
+    - `DBUtil`: 데이터베이스 연결 및 해제를 효율적으로 관리
+
+---
+
+### 📝 최은진 - [@PanicAthe](https://github.com/PanicAthe)
+
+- **게시글 작성 기능 구현**
+    - `WriteController`: 사용자 입력을 바탕으로 새로운 게시글을 작성하고 DB에 저장하는 기능 구현
+- **비즈니스 로직 개발**
+    - `BoardService`: 게시글 작성 로직(`createBoard`) 및 데이터 검증 로직 추가
+- **문서화 및 프로젝트 관리**
+    - 프로젝트 커밋 컨벤션 수립 및 README 작성
+    - 프로젝트 구조, 설치 방법, 실행 방법 등을 포함한 README 문서화
+- **데이터베이스 설계**
+    - DB 스키마 설계 및 SQL 스크립트 작성
+    - `board` 테이블과 시퀀스 생성, 더미 데이터 삽입
+
+---
+
+### 📋 김세연 - [@Yee0nnN](https://github.com/Yee0nnN)
+
+- **게시글 목록 조회 기능 구현**
+    - `ListController`: 게시글 목록을 ID 오름차순으로 정렬하여 조회
+    - 게시글 목록 형식: ID, 제목, 작성자, 작성일, 내용 순으로 출력
+    - 긴 제목과 내용을 요약하여 표시하는 기능
+        - `summarize()` : 긴 내용 요약
+        - `truncate()` : 긴 제목 요약
+- **비즈니스 로직 구현**
+    - `BoardService`: 게시글 전체 조회 기능 (`selectAll()`)
+
+---
+
+### 🛠️ 강경민 - [@Gaegulin](https://github.com/Gaegulin)
+
+- **게시글 상세 조회 및 관리**
+    - `DetailController`: 특정 게시글 ID를 입력받아 상세 조회, 수정, 삭제 기능 구현
+        - `f_selectOne`: ID를 통해 상세 조회하여 게시글의 전체 내용을 출력
+        - `f_update`: 기존 제목과 내용을 출력하고 수정할 내용을 사용자에게 입력받음
+        - `f_delete`: 게시글 삭제 기능 구현
+- **비즈니스 로직 개발**
+    - `BoardService`: 게시글 상세 조회(`selectOne`), 수정(`update`), 삭제(`delete`) 기능 구현
+
+---
 
 ## 🧭 주요 기능
 

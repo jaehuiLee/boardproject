@@ -22,7 +22,7 @@
 | 이름 | GitHub 계정 | 담당 | 커밋(main) |
 | --- | --- | --- | --- |
 | 이재희(팀장) | [@jaehuiLee](https://github.com/jaehuiLee) | 💻 전체 프로젝트 관리 및 코드 리뷰 | 10 |
-| 최은진 | [@PanicAthe](https://github.com/PanicAthe) | 📝 글 작성 기능, 컨벤션, SQL 작성 | 6 |
+| 최은진 | [@PanicAthe](https://github.com/PanicAthe) | 📝 글 작성 기능, 컨벤션, SQL 작성 | 7 |
 | 김세연 | [@Yee0nnN](https://github.com/Yee0nnN) | 📖 목록 조회 기능 (선택, 전체) | 7 |
 | 강경민 | [@Gaegulin](https://github.com/Gaegulin) | 📌 상세 조회, 수정, 삭제 기능 | 9 |
 
@@ -216,3 +216,14 @@ java -cp .;lib/ojdbc8.jar common.FrontController
 | 핫픽스 | 💥 | 긴급한 버그 수정 |
 | 삭제 | 🗑️ | 불필요한 파일 삭제 |
 | 리팩토링 | 🔍 | 코드 구조 개선 |
+
+---
+## 🚨 트러블 슈팅 문서
+
+프로젝트 개발 과정에서 발생한 각종 이슈 및 문제 해결 과정을 체계적으로 정리한 **트러블 슈팅 문서**입니다.  
+각 팀원은 자신이 맡은 기능 개발 중 발생한 오류, 충돌, 예외 상황 등을 기록하고, 해결 방법을 명확히 정리합니다.
+
+📌 [트러블 슈팅 노션 페이지](https://pebble-galette-3c9.notion.site/1ed1b986cb978090926be8c266d23443?pvs=4)
+
+---
+
